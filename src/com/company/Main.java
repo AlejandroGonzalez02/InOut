@@ -2,13 +2,19 @@ package com.company;
 
 import Libreria.*;
 
+/**
+ * @author Alejandro Gonzalez Alonso
+ * @version 1.0
+ * @date    2021-05-13
+ */
+
 public class Main {
 
     public static void main(String[] args) {
-        Consola cons= new Consola();
-        cons.mensaxe();
-        Ventana vent= new Ventana();
-        vent.mensaxe();
+
+        //Instanciamos o factory para que nos saque os mensaxes
+        Factory factory= new Factory();
+        factory.getProduto();
 
     }
 }
